@@ -125,3 +125,6 @@ Once your NCCO is built and you have connected that URL to an application and li
 - [https://aws.amazon.com/lex/faqs/]()
 
 - [http://docs.aws.amazon.com/lex/latest/dg/API_Reference.html]()
+
+##Credits
+Based on a tutorial by [Sriram Rajan](https://github.com/srirajan) of Rackspace 
