@@ -5,13 +5,9 @@ In this example, we will be creating a simple Lex bot that uses a Lambda functio
 
  - Login to the AWS Console and go to the IAM console.
 
- - Create a role called 'lambda-lex'.
+ - Go to AWS service-linked role, and select "Amazon Lex-Bots".
 
- - In the policy section, attach 'AmazonLexRunBotsOnly' policy.
- 
- - Next create a user called 'lex-connector'
- 
- - Attach the existing policy named 'AmazonLexRunBotsOnly'
+ - Then, select "Create role". You do not need to enter a role name
  
  - Select the Security Credendtials Tab and Generate a set of Access Keys
  
@@ -35,6 +31,7 @@ In this example, we will be creating a simple Lex bot that uses a Lambda functio
  - Now, create an Intent with the name 'HelloName'.
 
  - Fill out the fields as shown in the screenshot. This example is fairly simple but you can customise it if you want to experiment.
+ Note: you must have a lambda function created first in order to save the Bot. 
  
 ![image](images/intent.png)
 
@@ -61,7 +58,11 @@ In this example, we will be creating a simple Lex bot that uses a Lambda functio
 
  - Copy and paste the contents of [lex_helloname.js](./lambda/lex_helloname.js) into the Lambda code text area.
 
- - In the `Function handler` leave as index.handler under `role section`, select the 'lambda-lex' role created earlier.
+ - In the `Function handler` leave as index.handler 
+ 
+ - Under `role section`, select the `Choose an existing role` item in the dropdown.
+ 
+ - In the `Existing role`, select `lambda_basic_execution`
 
  - Remaining options can be left as default
 
