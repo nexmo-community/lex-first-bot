@@ -4,10 +4,12 @@ In this example, we will be creating a simple Lex bot that uses a Lambda functio
 ## Setup IAM
 
  - Login to the AWS Console and go to the IAM console.
+ 
+ - Select Roles, then click Create new role
 
- - Go to AWS service-linked role, and select "Amazon Lex-Bots".
+ - Go to AWS service-linked role, and select "Amazon Lex - Bots".
 
- - Then, select "Create role". You do not need to enter a role name
+ - Then, select "Create role".  Do not  edit the role name
  
  - Select the Security Credendtials Tab and Generate a set of Access Keys
  
